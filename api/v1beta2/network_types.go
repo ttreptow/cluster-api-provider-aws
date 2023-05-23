@@ -109,8 +109,7 @@ type TargetGroupSpec struct {
 	// Name of the TargetGroup. Must be unique over the same group of listeners.
 	Name string `json:"name"`
 	// Port is the exposed port
-	Port int64 `json:"port"`
-	// +kubebuilder:validation:Enum=tcp;tls;upd
+	Port     int64       `json:"port"`
 	Protocol ELBProtocol `json:"protocol"`
 	VpcID    string      `json:"vpcId"`
 	// HealthCheck is the elb health check associated with the load balancer.

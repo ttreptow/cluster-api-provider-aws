@@ -1674,10 +1674,6 @@ spec:
                                 protocol:
                                   description: ELBProtocol defines listener protocols
                                     for a load balancer.
-                                  enum:
-                                  - tcp
-                                  - tls
-                                  - upd
                                   type: string
                                 targetGroupHealthCheck:
                                   description: HealthCheck is the elb health check
